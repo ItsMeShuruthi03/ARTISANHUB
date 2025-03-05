@@ -1,0 +1,1088 @@
+/* Container positioned from the right */
+.workshops-section .container {
+    position: relative;
+    top: 200px;
+    right: -100px;
+    /* Adjust distance from the right */
+    max-width: 450px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Heading styles */
+.workshops-section h2 {
+    font-size: 2.0rem;
+    color: #2c3e50;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workshops-section h3 {
+    font-size: 1.40rem;
+    color: #34495e;
+    font-weight: normal;
+    /* Removes the bold style */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Paragraph styles */
+.workshops-section p {
+    font-size: 14px;
+    /* Set font size to 10 pixels */
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .workshops-section h2 {
+        font-size: 2rem;
+    }
+
+    .workshops-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .workshops-section p {
+        font-size: 0.70rem;
+    }
+}
+
+
+.workshop-details {
+    display: flex;
+    justify-content: center;
+    /* Center the card horizontally */
+    margin: 10px 0;
+    /* Space above and below the card */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.workshop-details-card {
+    max-width: 400px;
+    margin: 20px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 9%;
+    /* Position it at the left edge of the screen */
+    top: 700px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button:hover {
+    background-color: #ff5722;
+}
+
+.icon-button:hover i {
+    margin-left: 15px;
+}
+
+
+
+.workshop-details-card2 {
+    max-width: 400px;
+    margin: 20px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 38%;
+    /* Position it at the left edge of the screen */
+    top: 700px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img2 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content2 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header2 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card2 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button2 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button2:hover {
+    background-color: #ff5722;
+}
+
+.icon-button2:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card3 {
+    max-width: 400px;
+    margin: 20px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 68%;
+    /* Position it at the left edge of the screen */
+    top: 700px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img3 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content3 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header3 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card3 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button3 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button3 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button3:hover {
+    background-color: #ff5722;
+}
+
+.icon-button3:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card4 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 5%;
+    /* Position it at the left edge of the screen */
+    top: 1350px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img4 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content4 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header4 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card4 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button4 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button4 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button4:hover {
+    background-color: #ff5722;
+}
+
+.icon-button4:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card5 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 34%;
+    /* Position it at the left edge of the screen */
+    top: 1400px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img5 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content5 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header5 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header5 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card5 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button5 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button5 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button5:hover {
+    background-color: #ff5722;
+}
+
+.icon-button5:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card6 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 65%;
+    /* Position it at the left edge of the screen */
+    top: 1340px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img6 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content6 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header6 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header6 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card6 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button6 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button6 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button6:hover {
+    background-color: #ff5722;
+}
+
+.icon-button6:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card7 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 5%;
+    /* Position it at the left edge of the screen */
+    top: 2050px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card7:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img7 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content7 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header7 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header7 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card7 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button7 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button7 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button7:hover {
+    background-color: #ff5722;
+}
+
+.icon-button7:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card8 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 35%;
+    /* Position it at the left edge of the screen */
+    top: 2180px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card8:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img8 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content8 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header8 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header8 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card8 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button8 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button8 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button8:hover {
+    background-color: #ff5722;
+}
+
+.icon-button8:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card9 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 65%;
+    /* Position it at the left edge of the screen */
+    top: 2180px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card9:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img9 {
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content9 {
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header9 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-header9 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card9 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button9 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button9 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button9:hover {
+    background-color: #ff5722;
+}
+
+.icon-button9:hover i {
+    margin-left: 15px;
+}
+
+.workshop-details-card10 {
+    max-width: 400px;
+    margin: 80px;
+    position: absolute;
+    /* Make the card position absolute for manual placement */
+    left: 5%;
+    /* Position it at the left edge of the screen */
+    top: 2850px;
+    /* Adjust top distance from the top of the page */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-details-card10:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img10 {
+    width: 100%;
+    height: 200px;
+    /* Set a fixed height to give the image a defined space */
+    object-fit: cover;
+}
+
+.card-content10 {
+    padding: -5pt;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+
+}
+
+.card-header10 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card-header10 h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.workshop-details-card10 p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.icon-button10 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7043;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-button10 i {
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.icon-button10:hover {
+    background-color: #ff5722;
+}
+
+.icon-button10:hover i {
+    margin-left: 15px;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    /* Set image position relative to the container */
+    top: 50px;
+    /* Move the image 50px down from the top */
+    object-fit: cover;
+    /* Cover the entire container */
+    filter: brightness(0.5) contrast(1.0);
+    /* Darken the image and increase contrast */
+}
+
+.overlay1 {
+    position: relative;
+    /* Set image position relative to the container */
+    /* Position the overlay absolutely within the container */
+    top: -290px;
+    /* Align to the top */
+    left: 5%;
+    /* Align to the left */
+    right: 0;
+    /* Align to the right */
+    bottom: 0;
+    /* Align to the bottom */
+    display: flex;
+    /* Use flexbox for centering */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    color: #ffffff;
+    /* White text color */
+    text-align: left;
+    /* Left-align text */
+    padding: 20px;
+    /* Add some padding for breathing space */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+
+}
+
+.overlay1 h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 65px;
+    /* Large font size for the main title */
+    margin: 20px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),
+        /* Main shadow */
+        -1px -1px 2px rgba(255, 255, 255, 0.5);
+    /* Light highlight shadow */
+}
+
+
+.overlay1 p {
+    font-family: 'Lora', serif;
+
+    font-size: 30px;
+    /* Font size for the subtitle */
+    margin: 0;
+    /* Remove margin */
+    font-weight: 500;
+    /* Use bold weight */
+    margin-left: 30pt;
+    /* Align to the left */
+
+}
+
+
+.footer {
+    color: #040404;
+    text-align: center;
+    position: relative;
+    top: 3000px; /* Align it to the top */
+    width: 100%;
+    font-size: 12px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Evenly distribute the content */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    padding: 10px; /* Add some padding around the footer */
+    font-weight: bold; /* Make the text bold */
+}
+/* Specific styling for the first paragraph */
+.footer .highlight {
+    color:  hsl(45, 8%, 10%); 
+}
+
+/* Button styling for the phone number */
+.footer .phone-button {
+    background-color: hsl(235, 46%, 5%); 
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand pointer on hover */
+    font-size: 12px; /* Button text size */
+    float: left; /* Align the button to the left */
+    margin-left: 100px; /* Adjust margin to move it more to the left if needed */
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color:hwb(0 38% 61%);
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hwb(0 38% 61%); 
+}
+
+.footer p {
+    margin: 0 15px; /* Space between each element */
+    white-space: nowrap; /* Prevent text from wrapping within each paragraph */
+}
+
+.footer a {
+    color: hwb(0 6% 93%);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-line {
+    height: 1.5px;
+    background-color: #000000;
+    width: 85%;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    top: 3000px; /* Align it to the top */
+}
+
+.container1 {
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    /* Padding for top and bottom */
+    position: absolute;
+    /* Position the container absolutely */
+    top: -140px;
+    /* Align it to the top */
+    margin-left: 360pt;
+    /* Align to the left */
+    /* Align it to the right */
+
+    /* Align the content to the right */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    /* Align navigation items to the left */
+    padding-right: 400px;
+    /* Add padding to the left for more space (adjust this value as needed) */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    display: inline-block;
+    /* Align the navigation horizontally */
+}
+
+nav ul li {
+    display: inline;
+    /* Inline list items */
+    margin: 0 10px;
+    /* Space between menu items (adjust as needed) */
+}
+
+nav ul li a {
+    display: inline-block;
+    /* Ensures the link behaves like a block-level element */
+    padding: 10px 20px;
+    /* Add padding to make the links look like buttons */
+    color: #fff;
+    /* Default white text */
+    background-color: transparent;
+    /* No background by default */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold for important details */
+    /* Smooth transition */
+}
+/* Wrap the cart icon, contact button, and home button in a container */
+.fixed-top-right {
+    position: relative;
+    /* Fix position relative to viewport */
+    top: -220px;
+    /* Align at the top */
+    right: -200px;
+    /* Align with the right edge */
+    display: flex;
+    /* Flexbox to align items horizontally */
+    gap: 20px;
+    /* Adjust spacing between the items */
+    align-items: center;
+    /* Vertically align items to the center */
+
+}
+.aboutus-btn,
+.training-btn,
+.ceramiclab-btn,
+.shop-btn {
+    font-size: 16px;
+    /* Button font size */
+    padding: 10px 10px;
+    /* Button padding */
+    background-color: rgb(16, 15, 15);
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.training-btn:hover,
+.aboutus-btn:hover,
+.ceramiclab-btn:hover,
+.shop-btn:hover {
+    background-color: hsl(216, 2%, 46%);
+    /* Darker background on hover */
+}
+.logo {
+    position: relative;
+    /* Allows precise positioning */
+    top: 0;
+    /* Move to the top */
+    left: -500px;
+    /* Adjust the left position as needed */
+}
+
+.logo img {
+    width: 400px;
+    /* Adjust the size of your logo */
+    height: auto;
+    filter: invert(2) brightness(10);
+    /* Inverts black to white */
+    font-weight: bold;
+    /* Bold for important details */
+}

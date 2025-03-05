@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtisansHub</title>
+
+    <!-- Add PrimeNG and PrimeIcons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/primeng/resources/themes/saga-blue/theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeng/resources/primeng.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css">
+</head>
+
+<body>
+
+    <header
+    style="background-image: url('assets/header2.jpg'); background-size: cover; background-position: center; height: 130px; position: relative;">
+  
+        <div class="container1">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a routerLink="/main-page">
+                    <img src="assets/logo.png" alt="ArtisansWorks Logo" />
+                </a>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="fixed-top-right">
+                <a routerLink="/home" class="training-btn-link" routerLinkActive="active">
+                    <button class="training-btn">Training</button>
+                </a>
+                <a routerLink="/about-us" class="aboutus-btn-link" routerLinkActive="active">
+                    <button class="aboutus-btn">About Us</button>
+                </a>
+                <a routerLink="/ceramic-lab" class="ceramiclab-btn-link" routerLinkActive="active">
+                    <button class="ceramiclab-btn">Ceramic Lab</button>
+                </a>
+                <a routerLink="/e-com" class="shop-btn-link" routerLinkActive="active">
+                    <button class="shop-btn">Shop</button>
+                </a>
+            </div>
+
+
+
+        </div>
+    </header>
+
+    <section class="workshops-section">
+        <div class="container">
+            <!-- Workshop Title -->
+            <!-- <h2>CLASSES</h2>
+            <h3>Learning with your hands.</h3> -->
+
+            <!-- Workshop Description -->
+            <!-- <p>At ArtisanHub, we foster a creative environment where learning transcends mere techniques. Our workshops
+                are designed to inspire, guided by our team of in-house artisans, experienced mentors, and insights from
+                our own Artisan Lab. With a thoughtfully curated curriculum, we provide the foundation you need to
+                explore, experiment, and perfect your craft through practical experience.</p>
+
+            <p>By working closely with skilled artists and industry professionals, our classes open doors to
+                collaborations, empowering emerging creators to build networks and showcase their unique talents.</p> -->
+        </div>
+    </section>
+
+    <div class="image-container">
+        <img src="assets/training.jpg" alt="Artisan Image">
+        <div class="overlay1">
+            <h1>CLASSES</h1>
+            <p>Learning with your hands.</p>
+        </div>
+    </div>
+    <!-- Card Content for Workshop Details -->
+    <section class="workshop-details">
+        <p-card class="workshop-details-card">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/clay.jpg" alt="Card Image" class="card-img">
+
+            <!-- Content below the image -->
+            <div class="card-content">
+                <div class="card-header">
+                    <h3>Clay Play (Adults-Online)</h3>
+                </div>
+
+                <p><strong>Date:</strong> August 21 - August 22</p>
+                <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                <p><strong>Days:</strong> Saturday and Sunday</p>
+                <p><strong>Number of sessions:</strong> 2</p>
+                <p><strong>Instructor:</strong> Nandhan</p>
+                <p><strong>Prerequisite:</strong> None</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- Second Workshop Card -->
+        <p-card class="workshop-details-card2">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/sec.jpg" alt="Card Image" class="card-img2">
+
+            <!-- Content below the image -->
+            <div class="card-content2">
+                <div class="card-header2">
+                    <h3>Introduction to Sculpting Portrait</h3>
+                </div>
+
+                <p><strong>Date:</strong> October 14 - October 18</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Days:</strong> Weekdays</p>
+                <p><strong>Number of sessions:</strong> 8</p>
+                <p><strong>Instructor:</strong> Akanksha Ramesh</p>
+                <p><strong>Prerequisite:</strong> Beginner Wheel Throwing or Handbuilding</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button2">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- Third Workshop Card -->
+        <p-card class="workshop-details-card3">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/pot3.jpg" alt="Card Image" class="card-img3">
+
+            <!-- Content below the image -->
+            <div class="card-content3">
+                <div class="card-header3">
+                    <h3>Beginner's Guide to Pottery</h3>
+                </div>
+
+                <p><strong>Date:</strong> December 1st - December 5th</p>
+                <p><strong>Time:</strong> 1:00 AM - 4:00 PM</p>
+                <p><strong>Days:</strong> Weekdays</p>
+                <p><strong>Number of sessions:</strong> 5</p>
+                <p><strong>Instructor:</strong>Meera Rao</p>
+                <p><strong>Prerequisite:</strong> None</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button3">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+
+
+        <!-- Fourth Workshop Card -->
+        <p-card class="workshop-details-card4">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/glaze.jpg" alt="Card Image" class="card-img4">
+
+            <!-- Content below the image -->
+            <div class="card-content4">
+                <div class="card-header4">
+                    <h3>Exploring Glazing Techniques</h3>
+                </div>
+
+                <p><strong>Date:</strong> September 15 - September 17</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Days:</strong> Saturday, Sunday, Monday</p>
+                <p><strong>Number of sessions:</strong> 10</p>
+                <p><strong>Instructor:</strong>Priya Nair</p>
+                <p><strong>Prerequisite:</strong>Basic Glazing Experience</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio(The Pottery Barn)</p>
+
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button4">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- Fifth Workshop Card -->
+        <p-card class="workshop-details-card5">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/wheel.jpg" alt="Card Image" class="card-img5">
+
+            <!-- Content below the image -->
+            <div class="card-content5">
+                <div class="card-header5">
+                    <h3>Intermediate Wheel Course: Form Explorations</h3>
+                </div>
+
+                <p><strong>Date:</strong> 19th Oct - 14th December</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Days:</strong> Saturday, Sunday</p>
+                <p><strong>Number of sessions:</strong> 24 instructor led</p>
+                <p><strong>Instructor:</strong>Shivu Mahesh</p>
+                <p><strong>Prerequisite:</strong>Throw 1.2 kgs of clay, Belly, Vases and Bowls</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button5">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- Sixth Workshop Card -->
+        <p-card class="workshop-details-card6">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/plate.jpg" alt="Card Image" class="card-img6">
+
+            <!-- Content below the image -->
+            <div class="card-content6">
+                <div class="card-header6">
+                    <h3>Exploring Forms on Pottery Wheel – 5 months (9th November 2024 – 22nd March 2025)</h3>
+                </div>
+
+                <p><strong>Date:</strong> 9th November 2024 - 22nd March 2025</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Days:</strong> Saturday, Sunday</p>
+                <p><strong>Number of sessions:</strong> 5 months</p>
+                <p><strong>Instructor:</strong>sajina rao</p>
+                <p><strong>Prerequisite:</strong>None</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button6">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+        <!-- Seventh Workshop Card -->
+
+        <p-card class="workshop-details-card7">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/aclic.jpg" alt="Acrylic Painting Image" class="card-img6">
+
+            <!-- Content below the image -->
+            <div class="card-content7">
+                <div class="card-header7">
+                    <h3>Acrylic Painting Basics – 4 weeks (1st November 2024 – 29th November 2024)</h3>
+                </div>
+
+                <p><strong>Date:</strong> 1st November 2024 - 29th November 2024</p>
+                <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                <p><strong>Days:</strong> Monday, Wednesday, Friday</p>
+                <p><strong>Number of sessions:</strong> 12</p>
+                <p><strong>Instructor:</strong> Ananya Verma</p>
+                <p><strong>Prerequisite:</strong> None</p>
+                <p><strong>Venue:</strong> ArtisanHub Studio</p>
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button7">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+        <!-- Eigth Workshop Card -->
+        <p-card class="workshop-details-card8">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/archit.jpg" alt="Architectural Forms Image" class="card-img8">
+
+            <!-- Content below the image -->
+            <div class="card-content8">
+                <div class="card-header8">
+                    <h3>Architectural Forms – (Dec 1 - Dec 30)</h3>
+                </div>
+
+                <p><strong>Date:</strong> Dec 1 - Dec 30</p>
+                <p><strong>Time:</strong> 6:30 PM - 7:30 PM</p>
+                <p><strong>Days:</strong> Wednesday, Friday, Saturday</p>
+                <p><strong>Number of sessions:</strong> 6</p>
+                <p><strong>Instructor:</strong> John Doe</p>
+                <p><strong>Prerequisite:</strong> None</p>
+                <p><strong>Venue:</strong>ArtisanHub Studio</p>
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button8">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- ninth Workshop Card -->
+        <p-card class="workshop-details-card9">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/flora.jpg" alt="Architectural Forms Image" class="card-img9">
+
+            <!-- Content below the image -->
+            <div class="card-content9">
+                <div class="card-header9">
+                    <h3>Create your own Ceramic Lamp : One Day Workshop (October 5th, Saturday)</h3>
+                </div>
+
+                <p><strong>Date:</strong> 5th October (2024)</p>
+                <p><strong>Time:</strong> 10:00 AM-2:00 PM</p>
+                <p><strong>Days:</strong> Saturday</p>
+                <p><strong>Number of sessions:</strong> 4 hrs</p>
+                <p><strong>Instructor:</strong> Navya Rao</p>
+                <p><strong>Prerequisite:</strong> None</p>
+                <p><strong>Venue:</strong>ArtisanHub Studio</p>
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button9">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+        <!-- tenth Workshop Card -->
+        <p-card class="workshop-details-card10">
+            <!-- Image covers the top part of the card -->
+            <img src="assets/ceramic.jpg" alt="Architectural Forms Image" class="card-img10">
+
+            <!-- Content below the image -->
+            <div class="card-content10">
+                <div class="card-header10">
+                    <h3>Functional Ceramics: Exploring The Product Design Process (Online Course)</h3>
+                </div>
+
+                <p><strong>Date:</strong> 10th November - 28th December</p>
+                <p><strong>Time:</strong> 10:00 AM-1:00 PM</p>
+                <p><strong>Days:</strong>Saturday and Sunday</p>
+                <p><strong>Number of sessions:</strong> 7 week</p>
+                <p><strong>Instructor:</strong>Gargi Sharma</p>
+                <p><strong>Prerequisite:</strong>Intermediary level of skills in ceramics, Handbuilding or Wheel
+                    throwing</p>
+                <p><strong>Venue:</strong>ArtisanHub Studio</p>
+
+
+                <!-- Call-to-action button -->
+                <a href="http://localhost:4200/instructor-experience" class="icon-button10">
+                    Learn More and Register <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </p-card>
+
+
+    </section>
+
+    <!-- Add PrimeNG script -->
+    <script src="https://unpkg.com/primeng/resources/primeng.min.js"></script>
+</body>
+
+</html>
+
+<hr class="footer-line" />
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p class="highlight">Come be a part of our creative community at ArtisanHub!</p>
+    <p><button class="phone-button">Phone: +91 6384481295</button></p>
+    <p>ArtisanHub 10, Temple Trees Row, S.T. Bed, Indira Colony, Tippuchandra, Bengaluru, Karnataka-560075 |
+        PH: +91 6384481295 | Operating Hours: 10 AM to 6 PM |
+        Email: <a href="mailto:training&#64;ArtisanHub.in">training&#64;ArtisanHub.in</a> |
+        Open Monday to Sunday</p>
+</footer>

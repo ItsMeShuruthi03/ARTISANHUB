@@ -1,0 +1,156 @@
+body {
+    background-color:#f5f5f5; /* Change this to your chosen color */
+}
+
+.logo-img {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    top: -10px; /* Distance from the top */
+    right: 800pt; /* Distance from the left */
+    height: 250px; /* Fixed height */
+    width: auto; /* Width adjusts automatically to maintain aspect ratio */
+}
+/* Container styles */
+.container {
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding for top and bottom */
+    position: absolute; /* Position the container absolutely */
+    top: 50px; /* Align it to the top */
+    right: 0; /* Align it to the right */
+    text-align: right; /* Align the content to the right */
+    z-index: 100; /* Ensure it's on top of other elements */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right; /* Align navigation items to the left */
+    padding-right: 300px; /* Add padding to the left for more space (adjust this value as needed) */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Align the navigation horizontally */
+}
+
+nav ul li {
+    display: inline; /* Inline list items */
+    margin: 0 10px; /* Space between menu items (adjust as needed) */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, sans-serif; /* Clean font */
+    font-size: 16px; /* Adjust font size */
+    color: hsl(60, 8%, 3%); /* Primary blue color for links */
+    padding: 10px 10px; /* Add padding inside links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav ul li a:hover {
+    background-color: hsl(52, 82%, 76%);  /* Darker blue background on hover */
+    color: #fff; /* White text on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .container {
+        position: static; /* Reset to default for small screens */
+        text-align: center; /* Center content on mobile */
+    }
+
+    nav ul {
+        display: block; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add vertical space between menu items */
+    }
+}
+
+
+
+.footer {
+    color: #040404;
+    text-align: center;
+    position: relative;
+    top: 2800px; /* Align it to the top */
+    width: 100%;
+    font-size: 12px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Evenly distribute the content */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    padding: 10px; /* Add some padding around the footer */
+}
+/* Specific styling for the first paragraph */
+.footer .highlight {
+    color:  hsl(50, 100%, 67%); 
+}
+
+/* Button styling for the phone number */
+.footer .phone-button {
+    background-color: hsl(50, 100%, 67%); 
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand pointer on hover */
+    font-size: 12px; /* Button text size */
+    float: left; /* Align the button to the left */
+    margin-left: 100px; /* Adjust margin to move it more to the left if needed */
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hsl(50, 74%, 73%);
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hsl(50, 74%, 73%); 
+}
+
+.footer p {
+    margin: 0 15px; /* Space between each element */
+    white-space: nowrap; /* Prevent text from wrapping within each paragraph */
+}
+
+.footer a {
+    color: hwb(0 6% 93%);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-line {
+    height: 1.5px;
+    background-color: #000000;
+    width: 85%;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    top: 2800px; /* Align it to the top */
+}
+
+.nav-button {
+    border: none; /* Remove default button border */
+    font-family: Arial, sans-serif; /* Same font as links */
+    font-size: 16px; /* Same font size as links */
+    color: #ffffff; /* White text */
+    padding: 10px 30px; /* Adjust padding for more width */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50px; /* High border-radius for oval shape */
+    background-color: #007bff; /* Primary blue background */
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+

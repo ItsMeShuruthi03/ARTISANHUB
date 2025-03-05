@@ -1,0 +1,204 @@
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a routerLink="/e-com">
+                    <img src="assets/logo.png" alt="ArtisansWorks Logo" />
+                </a>
+            </div>
+            <div class="fixed-top-right">
+                <a routerLink="/signin-online" class="person-icon" routerLinkActive="active">
+                    <i class="bi bi-person"></i>
+                </a>
+                <a routerLink="/e-comcontact" class="telephone-icon" routerLinkActive="active">
+                    <i class="bi bi-telephone"></i>
+                </a>
+                <a routerLink="/main-page" class="house-icon" routerLinkActive="active">
+                    <i class="bi bi-house"></i>
+                </a>
+                <!-- <a routerLink="/e-comcontact" class="contact-btn-link" routerLinkActive="active">
+                    <button class="contact-btn">Contact</button>
+                </a> -->
+                <a routerLink="/outlet" class="outlet-btn-link" routerLinkActive="active">
+                    <button class="outlet-btn">Outlet</button>
+                </a>
+                <p-button (onClick)="show()" icon="pi pi-shopping-cart" />
+                <!-- <a routerLink="/main-page" class="home-btn-link" routerLinkActive="active">
+                    <button class="home-btn">Home</button>
+                </a> -->
+            </div>
+        </div>
+    </header>
+    <!-- Image Content Section -->
+    <div class="image-content">
+        <img src="assets/outlet.jpg" alt="Artisan Image">
+        <div class="overlay">
+            <h1>Shop Smart with Our Expert Team!</h1>
+        </div>
+    </div>
+    <!-- New Arrivals Section -->
+    <section class="new-best sellers">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="assets/new1.jpg" alt="New Arrival 1">
+                <h3>{{ JugTownPottery }}</h3>
+                <p>Rs.{{ JugTownPotteryForPrice }}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart" (click)="addCart(JugTownPotteryForPrice, JugTownPottery)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new2.jpg" alt="New Arrival 2">
+                <h3>{{DecorativeElephantFigurine}}</h3>
+                <p>Rs.{{ DecorativeElephantFigurineForPrice }}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(DecorativeElephantFigurineForPrice, DecorativeElephantFigurine)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new3.jpg" alt="New Arrival 3">
+                <h3>{{EmbracingLoveSculpture}}</h3>
+                <p>Rs.{{EmbracingLoveSculptureForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(EmbracingLoveSculptureForPrice, EmbracingLoveSculpture )">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new4.jpg" alt="New Arrival 4">
+                <h3>{{SunsetFalling}}</h3>
+                <p>Rs.{{SunsetFallingForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart" (click)="addCart(SunsetFallingForPrice, SunsetFalling)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new5.jpg" alt="New Arrival 5">
+                <h3>{{AcrylicPaintingRadhaKrishna}}</h3>
+                <p>Rs.{{AcrylicPaintingRadhaKrishnaForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(AcrylicPaintingRadhaKrishnaForPrice, AcrylicPaintingRadhaKrishna)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new6.jpg" alt="New Arrival 6">
+                <h3>{{ArtisticFlairAbstractDesignModernGirl}}</h3>
+                <p>Rs.{{ArtisticFlairAbstractDesignModernGirlForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(ArtisticFlairAbstractDesignModernGirlForPrice, ArtisticFlairAbstractDesignModernGirl)">Add
+                    To Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new7.jpg" alt="New Arrival 7">
+                <h3>{{IntegrityEastFrok}}</h3>
+                <p>Rs.{{IntegrityEastFrokForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(IntegrityEastFrokForPrice, IntegrityEastFrok)">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/new8.jpg" alt="New Arrival 8">
+                <h3>{{EastFrok}}</h3>
+                <p>Rs.{{EastFrokForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart" (click)="addCart(EastFrokForPrice, EastFrok)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/best1.jpg" alt="New Arrival 9">
+                <h3>{{DIPPINGTONGS4}}</h3>
+                <p>Rs.{{DIPPINGTONGS4ForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart" (click)="addCart(DIPPINGTONGS4ForPrice, DIPPINGTONGS4)">Add To
+                    Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/best2.jpg" alt="New Arrival 10">
+                <h3>{{HANDLEMAKERTOOLS}}</h3>
+                <p>Rs.{{HANDLEMAKERTOOLSForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart" (click)="addCart(HANDLEMAKERTOOLSForPrice, HANDLEMAKERTOOLS)">Add
+                    To Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/best3.jpg" alt="New Arrival 11">
+                <h3>{{WOODMODELLINGTOOLS}}</h3>
+                <p>Rs.{{WOODMODELLINGTOOLSForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(WOODMODELLINGTOOLSForPrice, WOODMODELLINGTOOLS)">Add To Cart</button>
+            </div>
+            <div class="product">
+                <img src="assets/best4.jpg" alt="New Arrival 12">
+                <h3>{{ADJUSTABLEPOTTERYWHEELGAUGE}}</h3>
+                <p>Rs.{{ADJUSTABLEPOTTERYWHEELGAUGEForPrice}}</p>
+                <button class="add-to-cart" (click)="buyNow()">BUY NOW</button>
+                <button class="add-to-cart pi pi-cart"
+                    (click)="addCart(ADJUSTABLEPOTTERYWHEELGAUGEForPrice, ADJUSTABLEPOTTERYWHEELGAUGE)">Add To
+                    Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <p-dialog header="Your Cart" [(visible)]="visible" [style]="{width: '150vw'}">
+        <div class="cart">
+          <p-table [value]="cartValue">
+            <ng-template pTemplate="header">
+              <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+              </tr>
+            </ng-template>
+      
+            <ng-template pTemplate="body" let-item>
+              <tr>
+                <td>{{ item.productname }}</td>
+                <td>{{ item.productprice }}</td>
+              </tr>
+            </ng-template>
+          </p-table>
+          <button class="add-to-cart" (click)="moveToPayment()">check out</button>
+        </div>
+      </p-dialog>
+      
+
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Warranties</a></li>
+                <li><a href="#">Returns and Exchanges</a></li>
+                <li><a href="#">Shipping and Delivery</a></li>
+                <li><a href="#">Glaze Mixing Instruction</a></li>
+                <li><a href="#">Kiln Wash Instruction</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Keep in Touch</h3>
+            <p>Sign up for our newsletter</p>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+    <!-- Copyright Section -->
+    <div class="copyright-section">
+        <p>© 2024 ArtisanHub. All Rights Reserved</p>
+    </div>
+</body>

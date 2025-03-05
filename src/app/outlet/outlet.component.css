@@ -1,0 +1,322 @@
+
+/* Wrap the cart icon, contact button, and home button in a container */
+.fixed-top-right {
+    position: relative;
+    /* Fix position relative to viewport */
+    top: -220px;
+    /* Align at the top */
+    right: -750px;
+    /* Align with the right edge */
+    display: flex;
+    /* Flexbox to align items horizontally */
+    gap: 20px;
+    /* Adjust spacing between the items */
+    align-items: center;
+    /* Vertically align items to the center */
+
+}
+
+/* Ensure cart icon and buttons have consistent sizing */
+.cart-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.person-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.telephone-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.house-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+
+
+.outlet-btn {
+    font-size: 16px;
+    /* Button font size */
+    padding: 10px 10px;
+    /* Button padding */
+    background-color: white;
+    /* Button background color */
+    color: rgb(18, 17, 17);
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+
+
+.outlet-btn:hover,
+.house-icon i:hover,
+.telephone-icon i:hover,
+.cart-icon i:hover,
+.person-icon i:hover {
+    background-color: hsl(216, 2%, 46%);
+    /* Darker background on hover */
+}
+
+.copyright-section {
+    background-color: #222;
+    /* Dark background for copyright */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    /* Dark background */
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-column input[type="email"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-column button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff5c5c;
+    /* Button color */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer-column button:hover {
+    background-color: #ff7878;
+}
+.logo {
+    position: relative;
+    /* Allows precise positioning */
+    top: 0;
+    /* Move to the top */
+    left: -500px;
+    /* Adjust the left position as needed */
+}
+
+.logo img {
+    width: 400px;
+    /* Adjust the size of your logo */
+    height: auto;
+    filter: invert(2) brightness(10);
+    /* Inverts black to white */
+    font-weight: bold;
+    /* Bold for important details */
+}
+.container {
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    /* Padding for top and bottom */
+    position: absolute;
+    /* Position the container absolutely */
+    top: -100px;
+    /* Align it to the top */
+    margin-left: 360pt;
+    /* Align to the left */
+    /* Align it to the right */
+
+    /* Align the content to the right */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
+}
+.image-content {
+    position: relative;
+    /* Establish positioning context for child elements */
+    margin-top: 10px;
+    /* Add space below the logo so content starts after it */
+    /* Adjust as needed */
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the entire container */
+    filter: brightness(0.5) contrast(1.3);
+    /* Darken the image and increase contrast */
+}
+
+.overlay {
+    position: absolute;
+    top: -5px;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    /* White text color */
+    text-align: left;
+    /* Left-align text */
+    padding: 20px;
+    /* Add some padding for breathing space */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+}
+
+.overlay h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    text-align: center;
+    font-size: 70px;
+    /* Large font size for the main title */
+    margin: 50px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),
+        /* Main shadow */
+        -1px -1px 2px rgba(255, 255, 255, 0.5);
+    /* Light highlight shadow */
+}
+
+
+/* General styling for the grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  
+}
+
+/* Styling individual products */
+.product {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    border-bottom: 2px solid #eee;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #e91e63;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Add to cart button */
+.add-to-cart {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #d81b60;
+}
+
+/* Hover effect */
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product {
+        width: 90%;
+    }
+}
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}

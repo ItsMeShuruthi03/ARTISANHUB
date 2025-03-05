@@ -1,0 +1,616 @@
+.container {
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    /* Padding for top and bottom */
+    position: absolute;
+    /* Position the container absolutely */
+    top: -100px;
+    /* Align it to the top */
+    margin-left: 360pt;
+    /* Align to the left */
+    /* Align it to the right */
+
+    /* Align the content to the right */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    /* Align navigation items to the left */
+    padding-right: 400px;
+    /* Add padding to the left for more space (adjust this value as needed) */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    display: inline-block;
+    /* Align the navigation horizontally */
+}
+
+nav ul li {
+    display: inline;
+    /* Inline list items */
+    margin: 0 10px;
+    /* Space between menu items (adjust as needed) */
+}
+
+nav ul li a {
+    display: inline-block;
+    /* Ensures the link behaves like a block-level element */
+    padding: 10px 20px;
+    /* Add padding to make the links look like buttons */
+    color: #fff;
+    /* Default white text */
+    background-color: transparent;
+    /* No background by default */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold for important details */
+    /* Smooth transition */
+}
+
+
+.logo {
+    position: relative;
+    /* Allows precise positioning */
+    top: 0;
+    /* Move to the top */
+    left: -500px;
+    /* Adjust the left position as needed */
+}
+
+.logo img {
+    width: 400px;
+    /* Adjust the size of your logo */
+    height: auto;
+    filter: invert(2) brightness(10);
+    /* Inverts black to white */
+    font-weight: bold;
+    /* Bold for important details */
+}
+
+/* Wrap the cart icon, contact button, and home button in a container */
+.fixed-top-right {
+    position: relative;
+    /* Fix position relative to viewport */
+    top: -220px;
+    /* Align at the top */
+    right: -200px;
+    /* Align with the right edge */
+    display: flex;
+    /* Flexbox to align items horizontally */
+    gap: 20px;
+    /* Adjust spacing between the items */
+    align-items: center;
+    /* Vertically align items to the center */
+
+}
+
+.aboutus-btn,
+.training-btn,
+.ceramiclab-btn,
+.shop-btn {
+    font-size: 16px;
+    /* Button font size */
+    padding: 10px 10px;
+    /* Button padding */
+    background-color: rgb(16, 15, 15);
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.training-btn:hover,
+.aboutus-btn:hover,
+.ceramiclab-btn:hover,
+.person-icon i:hover,
+.shop-btn:hover {
+    background-color: hsl(216, 2%, 46%);
+    /* Darker background on hover */
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.person-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #0a0a0a;
+    /* Icon color */
+    
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the entire container */
+    filter: brightness(1.2);
+    /* Increase brightness (1 is original brightness) */
+}
+
+.overlay {
+    position: absolute;
+    /* Position the overlay absolutely within the container */
+    top: -170px;
+    /* Align to the top */
+    left: 5%;
+    /* Align to the left */
+    right: 0;
+    /* Align to the right */
+    bottom: 0;
+    /* Align to the bottom */
+    display: flex;
+    /* Use flexbox for centering */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    color: #ffffff;
+    /* White text color */
+    text-align: left;
+    /* Left-align text */
+    padding: 20px;
+    /* Add some padding for breathing space */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+
+}
+
+.overlay h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 65px;
+    /* Large font size for the main title */
+    margin: 20px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),
+        /* Main shadow */
+        -1px -1px 2px rgba(255, 255, 255, 0.5);
+    /* Light highlight shadow */
+}
+
+
+.overlay p {
+    font-family: 'Lora', serif;
+
+    font-size: 30px;
+    /* Font size for the subtitle */
+    margin: 0;
+    /* Remove margin */
+    font-weight: 500;
+    /* Use bold weight */
+    margin-left: 30pt;
+    /* Align to the left */
+
+}
+
+/* Styles for the second image container */
+.image-container2 {
+    margin-left: 150pt;
+    /* Align to the left */
+    height: 00px;
+    /* Reduce the container height */
+    width: 80%;
+    /* Full width of the parent container */
+    margin-top: 150px;
+    /* Add space above */
+}
+
+/* Image with photo frame-like border */
+.image-container2 img {
+    width: 50%;
+    /* Reduce image width to 50% of its original size */
+    height: auto;
+    /* Maintain aspect ratio */
+    filter: brightness(1.2);
+    /* Increase brightness */
+    border-radius: 10px;
+    /* Rounded corners */
+
+    /* Photo frame border */
+    border: 8px solid #161515;
+    /* Thick solid border (use any frame color) */
+    padding: 10px;
+    /* Space between image and border for frame effect */
+    background-color: #f3f3f3;
+    /* Frame background color */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /* Add shadow for depth */
+}
+
+.image-container2 h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 50px;
+    /* Large font size for the main title */
+    margin: -300px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    margin-left: 500pt;
+    /* Align to the left */
+}
+
+
+.image-container2 p {
+    font-size: 16px;
+    /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 400px;
+    /* Add space above */
+    margin-left: 500pt;
+    /* Align to the left */
+
+    line-height: 1.6;
+
+    text-align: justify;
+
+}
+
+
+/* Styles for the second image container */
+.image-container3 {
+    margin-left: 650pt;
+    /* Align to the left */
+    height: 00px;
+    /* Reduce the container height */
+    width: 80%;
+    /* Full width of the parent container */
+    margin-top: 200px;
+    /* Add space above */
+}
+
+/* Image with photo frame-like border */
+.image-container3 img {
+    width: 30%;
+    /* Reduced image width to 30% of its original size */
+    height: auto;
+    /* Maintain aspect ratio */
+    filter: brightness(1.2);
+    /* Increase brightness */
+    border-radius: 10px;
+    /* Rounded corners */
+
+    /* Photo frame border */
+    border: 8px solid #161515;
+    /* Thick solid border (use any frame color) */
+    padding: 10px;
+    /* Space between image and border for frame effect */
+    background-color: #f3f3f3;
+    /* Frame background color */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /* Add shadow for depth */
+}
+
+
+.image-container3 h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 20px;
+    /* Large font size for the main title */
+    margin: 10px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    margin-left: -40pt;
+    /* Align to the left */
+}
+
+
+.image-container3 p {
+    font-size: 16px;
+    /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -400px;
+    margin-left: -500pt;
+    margin-bottom: 10px;
+    /* Add space below the paragraph */
+    max-width: 50%;
+    /* Set a maximum width for better readability */
+    line-height: 1.6;
+    /* Set line height for readability */
+    text-align: justify;
+    /* Justify text for neat alignment */
+}
+
+.image-content {
+    position: relative;
+    /* Establish positioning context for child elements */
+    margin-top: 800px;
+    /* Adjust as needed */
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the entire container */
+    filter: brightness(0.5) contrast(1.2);
+    /* Darken the image and increase contrast */
+}
+
+.white-box {
+    position: absolute;
+    /* Position the box over the image */
+    top: 5%;
+    /* Center vertically */
+    left: 10%;
+    /* Center horizontally */
+    width: 500px;
+    /* Increased width for the box */
+    height: 400px;
+    /* Increased height for the box */
+    background-color: white;
+    /* White background for the box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Add some shadow for depth */
+    padding: 30px;
+    /* Adjust padding as needed */
+    text-align: center;
+}
+
+
+.image-content.overlay {
+    position: absolute;
+    /* Position the overlay inside the box */
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white overlay */
+    pointer-events: none;
+    /* Allow clicks to pass through the overlay */
+}
+
+.white-box p {
+    position: relative;
+    /* Position text over the overlay */
+    color: black;
+    /* Text color */
+    margin: -10px;
+}
+
+.image-content h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 40px;
+    /* Large font size for the main title */
+    color: hwb(239 9% 53%);
+    /* Text color */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Styles for the second image container */
+.image-container4 {
+    margin-left: 650pt;
+    /* Align to the left */
+    height: 00px;
+    /* Reduce the container height */
+    width: 80%;
+    /* Full width of the parent container */
+    margin-top: 150px;
+    /* Add space above */
+}
+
+/* Image with photo frame-like border */
+.image-container4 img {
+    width: 30%;
+    /* Reduced image width to 30% of its original size */
+    height: auto;
+    /* Maintain aspect ratio */
+    filter: brightness(1.2);
+    /* Increase brightness */
+    border-radius: 10px;
+    /* Rounded corners */
+
+    /* Photo frame border */
+    border: 8px solid #161515;
+    /* Thick solid border (use any frame color) */
+    padding: 10px;
+    /* Space between image and border for frame effect */
+    background-color: #f3f3f3;
+    /* Frame background color */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /* Add shadow for depth */
+}
+
+.image-container4 h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 20px;
+    /* Large font size for the main title */
+    margin: 10px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    margin-left: -5pt;
+    /* Align to the left */
+}
+
+
+.image-container4 p {
+    font-size: 16px;
+    /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -400px;
+    margin-left: -500pt;
+    margin-bottom: 10px;
+    /* Add space below the paragraph */
+    max-width: 50%;
+    /* Set a maximum width for better readability */
+    line-height: 1.6;
+    /* Set line height for readability */
+    text-align: justify;
+    /* Justify text for neat alignment */
+}
+
+
+/* Styles for the second image container */
+.image-container5 {
+    margin-left: 150pt;
+    /* Align to the left */
+    height: 00px;
+    /* Reduce the container height */
+    width: 80%;
+    /* Full width of the parent container */
+    margin-top: 450px;
+    /* Add space above */
+}
+
+/* Image with photo frame-like border */
+.image-container5 img {
+    width: 40%;
+    /* Reduce image width to 50% of its original size */
+    height: auto;
+    /* Maintain aspect ratio */
+    filter: brightness(1.2);
+    /* Increase brightness */
+    border-radius: 10px;
+    /* Rounded corners */
+
+    /* Photo frame border */
+    border: 8px solid #161515;
+    /* Thick solid border (use any frame color) */
+    padding: 10px;
+    /* Space between image and border for frame effect */
+    background-color: #f3f3f3;
+    /* Frame background color */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /* Add shadow for depth */
+}
+
+.image-container5 h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    font-size: 20px;
+    /* Large font size for the main title */
+    margin: -5px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    margin-left: -550pt;
+    /* Align to the left */
+    text-align: center;
+}
+
+
+.image-container5 p {
+    font-size: 16px;
+    /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -150pt;
+    /* Add space above */
+    margin-left: 450pt;
+    /* Align to the left */
+
+    line-height: 1.6;
+
+    text-align: justify;
+
+}
+
+.footer {
+    color: #040404;
+    text-align: center;
+    position: relative;
+    top: 3000px;
+    /* Align it to the top */
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    justify-content: space-around;
+    /* Evenly distribute the content */
+    align-items: center;
+    /* Vertically center items */
+    flex-wrap: wrap;
+    /* Ensure it wraps on smaller screens */
+    padding: 10px;
+    /* Add some padding around the footer */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Specific styling for the first paragraph */
+.footer .highlight {
+    color: hsl(45, 8%, 10%);
+}
+
+/* Button styling for the phone number */
+.footer .phone-button {
+    background-color: hsl(235, 46%, 5%);
+    color: white;
+    /* White text color */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding for button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Hand pointer on hover */
+    font-size: 12px;
+    /* Button text size */
+    float: left;
+    /* Align the button to the left */
+    margin-left: 100px;
+    /* Adjust margin to move it more to the left if needed */
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hwb(0 38% 61%);
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hwb(0 38% 61%);
+}
+
+.footer p {
+    margin: 0 15px;
+    /* Space between each element */
+    white-space: nowrap;
+    /* Prevent text from wrapping within each paragraph */
+}
+
+.footer a {
+    color: hwb(0 6% 93%);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-line {
+    height: 1.5px;
+    background-color: #000000;
+    width: 85%;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    top: 3000px;
+    /* Align it to the top */
+}

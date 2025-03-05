@@ -1,0 +1,363 @@
+.container {
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    /* Padding for top and bottom */
+    position: absolute;
+    /* Position the container absolutely */
+    top: -100px;
+    /* Align it to the top */
+    margin-left: 360pt;
+    /* Align to the left */
+    /* Align it to the right */
+
+    /* Align the content to the right */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    /* Align navigation items to the left */
+    padding-right: 400px;
+    /* Add padding to the left for more space (adjust this value as needed) */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    display: inline-block;
+    /* Align the navigation horizontally */
+}
+
+nav ul li {
+    display: inline;
+    /* Inline list items */
+    margin: 0 10px;
+    /* Space between menu items (adjust as needed) */
+}
+
+nav ul li a {
+    display: inline-block;
+    /* Ensures the link behaves like a block-level element */
+    padding: 10px 20px;
+    /* Add padding to make the links look like buttons */
+    color: #fff;
+    /* Default white text */
+    background-color: transparent;
+    /* No background by default */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold for important details */
+    /* Smooth transition */
+}
+
+
+.logo {
+    position: relative;
+    /* Allows precise positioning */
+    top: 0;
+    /* Move to the top */
+    left: -500px;
+    /* Adjust the left position as needed */
+}
+
+.logo img {
+    width: 400px;
+    /* Adjust the size of your logo */
+    height: auto;
+    filter: invert(2) brightness(10);
+    /* Inverts black to white */
+    font-weight: bold;
+    /* Bold for important details */
+}
+/* Wrap the cart icon, contact button, and home button in a container */
+.fixed-top-right {
+    position: relative;
+    /* Fix position relative to viewport */
+    top: -220px;
+    /* Align at the top */
+    right: -750px;
+    /* Align with the right edge */
+    display: flex;
+    /* Flexbox to align items horizontally */
+    gap: 20px;
+    /* Adjust spacing between the items */
+    align-items: center;
+    /* Vertically align items to the center */
+
+}
+
+/* Ensure cart icon and buttons have consistent sizing */
+.cart-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.person-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.telephone-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+/* Ensure cart icon and buttons have consistent sizing */
+.house-icon i {
+    font-size: 24px;
+    /* Adjust icon size to match button height */
+    color: #ffffff;
+    /* Icon color */
+
+}
+
+
+.outlet-btn {
+    font-size: 16px;
+    /* Button font size */
+    padding: 10px 10px;
+    /* Button padding */
+    background-color: white;
+    /* Button background color */
+    color: rgb(18, 17, 17);
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+
+
+.outlet-btn:hover,
+.house-icon i:hover,
+.telephone-icon i:hover,
+.cart-icon i:hover,
+.person-icon i:hover {
+    background-color: hsl(216, 2%, 46%);
+    /* Darker background on hover */
+}
+
+
+
+
+.image-content {
+    position: relative;
+    /* Establish positioning context for child elements */
+    margin-top: 10px;
+    /* Add space below the logo so content starts after it */
+    /* Adjust as needed */
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the entire container */
+    filter: brightness(0.5) contrast(1.3);
+    /* Darken the image and increase contrast */
+}
+
+.overlay {
+    position: absolute;
+    top: -5px;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    /* White text color */
+    text-align: left;
+    /* Left-align text */
+    padding: 20px;
+    /* Add some padding for breathing space */
+    border-radius: 10px;
+    /* Optional: add rounded corners */
+}
+
+.overlay h1 {
+    font-family: 'Playfair Display', serif;
+    /* Use Playfair Display font for the title */
+    text-align: center;
+    font-size: 70px;
+    /* Large font size for the main title */
+    margin: 50px;
+    /* Add margin above, remove default margin */
+    font-weight: 700;
+    /* Use bold weight (700 for bold) */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8),
+        /* Main shadow */
+        -1px -1px 2px rgba(255, 255, 255, 0.5);
+    /* Light highlight shadow */
+}
+
+
+
+.table-container {
+    margin: 80px auto;
+    /* Center the table */
+    width: 80%;
+    /* Adjust the width of the table */
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.table-container h2 {
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    font-size: 20px;
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+table {
+    width: 100%;
+    /* Full width of the table */
+    border-collapse: collapse;
+    /* Collapse borders */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    /* Border for table cells */
+    padding: 12px;
+    /* Padding inside cells */
+    text-align: left;
+    /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2;
+    /* Light background for headers */
+    color: #333;
+    /* Dark text color for headers */
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    /* Highlight row on hover */
+}
+
+.warehouse-info {
+    top: 100%;
+    margin-left: 10%;
+
+}
+
+.warehouse-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+    /* Darker heading color */
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    /* Bold for important details */
+
+}
+
+.warehouse-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    /* Text color */
+}
+
+.warehouse-info strong {
+    font-weight: bold;
+    /* Bold for important details */
+    font-size: 15px;
+}
+
+.copyright-section {
+    background-color: #222;
+    /* Dark background for copyright */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    /* Dark background */
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-column input[type="email"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-column button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff5c5c;
+    /* Button color */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer-column button:hover {
+    background-color: #ff7878;
+}

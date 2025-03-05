@@ -1,0 +1,375 @@
+.container {
+    width: 100%;
+    /* Full width */
+    padding: 10px 0;
+    /* Padding for top and bottom */
+    position: absolute;
+    /* Position the container absolutely */
+    top: -140px;
+    /* Align it to the top */
+    margin-left: 360pt;
+    /* Align to the left */
+    /* Align it to the right */
+
+    /* Align the content to the right */
+    z-index: 100;
+    /* Ensure it's on top of other elements */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    /* Align navigation items to the left */
+    padding-right: 400px;
+    /* Add padding to the left for more space (adjust this value as needed) */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    display: inline-block;
+    /* Align the navigation horizontally */
+}
+
+nav ul li {
+    display: inline;
+    /* Inline list items */
+    margin: 0 10px;
+    /* Space between menu items (adjust as needed) */
+}
+
+nav ul li a {
+    display: inline-block;
+    /* Ensures the link behaves like a block-level element */
+    padding: 10px 20px;
+    /* Add padding to make the links look like buttons */
+    color: #fff;
+    /* Default white text */
+    background-color: transparent;
+    /* No background by default */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold for important details */
+    /* Smooth transition */
+}
+
+
+.logo {
+    position: relative;
+    /* Allows precise positioning */
+    top: 0;
+    /* Move to the top */
+    left: -500px;
+    /* Adjust the left position as needed */
+}
+
+.logo img {
+    width: 400px;
+    /* Adjust the size of your logo */
+    height: auto;
+    filter: invert(2) brightness(10);
+    /* Inverts black to white */
+    font-weight: bold;
+    /* Bold for important details */
+}
+
+/* Wrap the cart icon, contact button, and home button in a container */
+.fixed-top-right {
+    position: relative;
+    /* Fix position relative to viewport */
+    top: -220px;
+    /* Align at the top */
+    right: -200px;
+    /* Align with the right edge */
+    display: flex;
+    /* Flexbox to align items horizontally */
+    gap: 20px;
+    /* Adjust spacing between the items */
+    align-items: center;
+    /* Vertically align items to the center */
+
+}
+
+.aboutus-btn,
+.training-btn,
+.ceramiclab-btn,
+.shop-btn {
+    font-size: 16px;
+    /* Button font size */
+    padding: 10px 10px;
+    /* Button padding */
+    background-color: rgb(16, 15, 15);
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.training-btn:hover,
+.aboutus-btn:hover,
+.ceramiclab-btn:hover,
+.shop-btn:hover {
+    background-color: hsl(216, 2%, 46%);
+    /* Darker background on hover */
+}
+
+
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Content Container Styles */
+.content-container {
+    max-width: 800px;
+    /* Maximum width of the container */
+    margin: 250px auto;
+    /* 250px top margin, centered horizontally */
+    margin-left: 100px;
+    /* Move the container to the left */
+}
+
+
+
+/* Heading Styles */
+h2 {
+    color: #2c3e50;
+    /* Darker color for the heading */
+    font-size: 25px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 14px;
+    /* Font size for the paragraph */
+    text-align: justify;
+    /* Justifies the text for neatness */
+
+}
+
+/* Image Content Styles */
+.image-content {
+
+    margin: -450px 0;
+    /* Adjust vertical spacing as needed */
+}
+
+.image-content img {
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    width: 400px;
+    /* Set the desired width for the image (adjust as needed) */
+    margin-left: 950px;
+    /* Remove negative margin */
+    border-radius: 10%;
+    /* Set to 50% for a circular shape */
+    padding: 10px;
+    /* Optional: add padding inside the border */
+}
+
+.image-content4 {
+
+    margin: 500px 0;
+    /* Adjust vertical spacing as needed */
+    left: 500px;
+}
+
+.image-content4 img {
+    max-width: 50%;
+    /* Makes the image responsive */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border-radius: 8px;
+    /* Optional: adds rounded corners to the image */
+    position: absolute;
+    /* Allows for precise positioning */
+    right: 40%;
+    /* Aligns the image to the right */
+}
+
+.image-content4 p {
+   
+    margin-left: 960px; /* Keeps paragraph aligned to the right */
+    margin-top: 300px; /* Adjust this value to move the paragraph down */
+    line-height: 1.6; /* Increases line height for better readability */
+    font-size: 14px; /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif; /* Sets the font family */
+    color: #333; /* Sets a dark gray color for the text */
+    max-width: 800px; /* Limits the maximum width of the paragraph for readability */
+    padding-right: 100px; /* Adds padding to ensure text doesn't overlap the image */
+}
+
+
+.image-content3 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-start; /* Align items at the start vertically */
+    margin: -330px 0; /* Adjust vertical spacing as needed */
+}
+
+.image-content3 img {
+    max-width: 40%; /* Ensure the image does not exceed its container */
+    margin-right: 140px; /* Add right margin to create space between paragraph and image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8%; /* Optional: set border radius */
+    padding: 10px; /* Optional: add padding inside the border */
+}
+
+.image-content3 p {
+    margin: 30px; /* Adjust margins for spacing */
+    margin-top: 50px; /* Adjust this value to move the paragraph down */
+    margin-right: 100px; /* Add right margin to create space between paragraph and image */
+    line-height: 1.6; /* Increases line height for better readability */
+    font-size: 14px; /* Sets a standard font size */
+    font-family: 'Open Sans', sans-serif; /* Sets the font family */
+    color: #333; /* Sets a dark gray color for the text */
+    max-width: 400px; /* Limit the width of the paragraph for readability */
+    padding: 8px; /* Optional: adds padding */
+}
+
+
+.image-content2 {
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: center;
+    /* Center the image horizontally */
+    margin: 200pt 0;
+    /* Adjust vertical spacing as needed */
+}
+
+.image-content2 img {
+    max-width: 50%;
+    /* Ensure the image does not exceed its container */
+    width: 950px;
+    /* Set the desired width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10%;
+    /* Set to 50% for a circular shape */
+    padding: 10px;
+    /* Optional: add padding inside the border */
+}
+
+.image-content1 {
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: center;
+    /* Center the image horizontally */
+    margin: -380pt 0;
+    /* Adjust vertical spacing as needed */
+}
+
+.image-content1 img {
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    width: 1200px;
+    /* Set the desired width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10%;
+    /* Set to 50% for a circular shape */
+    padding: 10px;
+    /* Optional: add padding inside the border */
+}
+
+.image-content0 {
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: center;
+    /* Center the image horizontally */
+    margin: 50cap 0;
+    /* Adjust vertical spacing as needed */
+}
+
+.image-content0 img {
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    width: 1000px;
+    /* Set the desired width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10%;
+    /* Set to 50% for a circular shape */
+    padding: 10px;
+    /* Optional: add padding inside the border */
+}
+
+
+
+.footer {
+    color: #040404;
+    text-align: center;
+    position: relative;
+    top: 900px; /* Align it to the top */
+    width: 100%;
+    font-size: 5px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Evenly distribute the content */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    padding: 10px; /* Add some padding around the footer */
+    font-weight: bold; /* Make the text bold */
+}
+/* Specific styling for the first paragraph */
+.footer .highlight {
+    color:  hsl(45, 8%, 10%); 
+}
+
+/* Button styling for the phone number */
+.footer .phone-button {
+    background-color: hsl(235, 46%, 5%); 
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand pointer on hover */
+    font-size: 12px; /* Button text size */
+    float: left; /* Align the button to the left */
+    margin-left: 100px; /* Adjust margin to move it more to the left if needed */
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color:hwb(0 38% 61%);
+}
+
+/* Button hover effect */
+.footer .phone-button:hover {
+    background-color: hwb(0 38% 61%); 
+}
+
+.footer p {
+    margin: 0 15px; /* Space between each element */
+    white-space: nowrap; /* Prevent text from wrapping within each paragraph */
+}
+
+.footer a {
+    color: hwb(0 6% 93%);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-line {
+    height: 1.5px;
+    background-color: #000000;
+    width: 85%;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    top: 900px; /* Align it to the top */
+}

@@ -1,0 +1,78 @@
+<div class="container p-5 h-100">
+  <div class="container p-3">
+    <h5>Payments</h5>
+  </div>
+
+  <p-card>
+    <div class="container center">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="header-buttons mr-5" style="display: flex; margin-left: 50%;">
+            <a (click)="showPayment()">Offline Payments</a>
+
+            <a (click)="showOnlinePayment()" style="margin-left: 40px;">Online Payments</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p-dialog [(visible)]="visible">
+      <div class="card">
+        <div class="form-group">
+          <label for="paymentMode">Select Payment Mode</label>
+          <p-dropdown id="paymentMode" name="paymentMode" [style]="{ width: '20rem' }" [options]="paymentModes"
+            [(ngModel)]="selectedPaymentMode" (onChange)="onPaymentModeChange()" optionLabel="label" optionValue="value"
+            placeholder="Choose Your Payment mode">
+          </p-dropdown>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="transactionNumber">Transaction Number</label>
+          <input style="width:20rem" type="text" name="transactionNumber" id="transactionNumber"
+            [(ngModel)]="transactionNumber">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="transactionDate">Transaction Date</label>
+          <p-calendar name="transactionDate" id="transactionDate" [showIcon]="true" dateFormat="dd/mm/yy"
+            [(ngModel)]="transactionDate">
+          </p-calendar>
+
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" name="amount" id="amount" [(ngModel)]="amount" style="width:20rem">
+        </div>
+        <br>
+        <div class="header-buttons">
+          <a (click)="onSubmit()">Pay</a>
+        </div>
+      </div>
+    </p-dialog>
+
+
+    <p-dialog [(visible)]="visibleOnlinePayment">
+      <h3>Google Pay</h3> <!-- Google Pay heading -->
+      
+      <input type="text" pInputText label="Amount" [(ngModel)]="amount" readonly/>
+      
+      <div class="header-buttons">
+          <a (click)="onSubmitOnlinePay()">Pay</a>
+      </div>
+  </p-dialog>
+  
+
+    <p-dialog [(visible)]="showUPI">
+      <div class="card">
+        <div class="row text-center">
+          <label for="upiId">Enter UPI ID: </label>
+          <input type="text" id="upiId" [(ngModel)]="upiId">
+        </div>
+        <div class="header-buttons p-2">
+          <button (click)="onSubmit()">Pay</button>
+        </div>
+      </div>
+    </p-dialog>
+  </p-card>
+</div>
