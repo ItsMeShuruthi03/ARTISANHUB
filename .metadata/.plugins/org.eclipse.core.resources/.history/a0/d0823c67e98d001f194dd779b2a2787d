@@ -1,0 +1,26 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.OnlineLogin; // Use OnlineLogin instead of User
+import com.example.demo.repository.OnlineLoginRepository;
+
+@Service
+public class OnlineLoginService {
+
+	 @Autowired
+	    private AuthService authService;
+
+	    @PostMapping("/signup")
+	    public ResponseEntity<?> registerUser(@RequestBody User user) {
+	        authService.registerUser(user);
+	        return ResponseEntity.ok("User registered successfully!");
+	    }
+
+	    @PostMapping("/signin")
+	    public ResponseEntity<?> authenticateUser(@RequestBody Map<String, String> loginData) {
+	        User user = authService.authenticateUser(loginData.get("username"), loginData.get("password"));
+	        return ResponseEntity.ok(user);
+	    }
+	}

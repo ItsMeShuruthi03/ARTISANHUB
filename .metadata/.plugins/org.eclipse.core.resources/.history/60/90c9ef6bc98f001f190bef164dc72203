@@ -1,0 +1,82 @@
+package com.example.demo.model;
+import java.util.Date;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+
+@Entity
+@Table(name = "payment")
+public class Payment {
+ 
+ @Id
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+ private Long id;
+
+ @Column(nullable = false)
+ private String paymentMode;
+
+ @Column(nullable = false)
+ private String transactionNumber;
+
+ @Temporal(TemporalType.DATE)
+ private Date transactionDate;
+
+ @Column(nullable = false)
+ private Double amount;
+
+ // Constructors, Getters, and Setters
+
+ public Payment() {}
+
+ public Payment(String paymentMode, String transactionNumber, Date transactionDate, Double amount) {
+     this.paymentMode = paymentMode;
+     this.transactionNumber = transactionNumber;
+     this.transactionDate = transactionDate;
+     this.amount = amount;
+ }
+
+ public Long getId() {
+     return id;
+ }
+
+ public void setId(Long id) {
+     this.id = id;
+ }
+
+ public String getPaymentMode() {
+     return paymentMode;
+ }
+
+ public void setPaymentMode(String paymentMode) {
+     this.paymentMode = paymentMode;
+ }
+
+ public String getTransactionNumber() {
+     return transactionNumber;
+ }
+
+ public void setTransactionNumber(String transactionNumber) {
+     this.transactionNumber = transactionNumber;
+ }
+
+ public Date getTransactionDate() {
+     return transactionDate;
+ }
+
+ public void setTransactionDate(Date transactionDate) {
+     this.transactionDate = transactionDate;
+ }
+
+ public Double getAmount() {
+     return amount;
+ }
+
+ public void setAmount(Double amount) {
+     this.amount = amount;
+ }
+}

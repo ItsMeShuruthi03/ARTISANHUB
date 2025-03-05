@@ -1,0 +1,62 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.example.demo.model.PaymentRequest;
+import com.example.demo.model.PaymentResponse;
+import com.example.demo.repository.PaymentRepository;
+@Service
+public class PaymentService {
+
+    public PaymentResponse verifyUpi(String upiId) {
+        // Simulated UPI verification
+        if (upiId != null && !upiId.isEmpty() && upiId.contains("@")) {
+            return new PaymentResponse(true, "UPI ID verified successfully.");
+        } else {
+            return new PaymentResponse(false, "UPI ID is invalid.");
+        }
+    }
+
+    public PaymentResponse processPayment(PaymentRequest request) {
+        // Simulate payment processing logic
+        if ("UPI".equalsIgnoreCase(request.getPaymentMethod()) && request.getUpiId() != null) {
+            return new PaymentResponse(true, "Payment processed successfully for UPI ID: " + request.getUpiId());
+        } else if ("Google Pay".equalsIgnoreCase(request.getPaymentMethod()) || 
+                   "PhonePe".equalsIgnoreCase(request.getPaymentMethod()) || 
+                   "Paytm".equalsIgnoreCase(request.getPaymentMethod())) {
+            // Simulate QR scan and payment confirmation
+            return new PaymentResponse(true, request.getPaymentMethod() + " payment processed successfully.");
+        } else {
+            return new PaymentResponse(false, "Payment method or UPI ID is invalid.");
+        }
+    }
+    @Autowired
+    private PaymentRepository paymentRequestRepository;
+
+    @PostMapping("/verify-upi")
+    public ResponseEntity<PaymentResponse> verifyUpi(@RequestBody PaymentRequest request) {
+        // Simulate UPI verification logic
+        boolean isVerified = request.getUpiId() != null && !request.getUpiId().isEmpty();
+        String message = isVerified ? "UPI ID verified: " + request.getUpiId() : "Invalid UPI ID";
+        PaymentResponse response = new PaymentResponse(isVerified, message);
+
+        return ResponseEntity.ok(response);
+    }
+
+    @PostMapping("/process-payment")
+    public ResponseEntity<PaymentResponse> processPayment1(@RequestBody PaymentRequest request) {
+        paymentRequestRepository.save(request); // Save the request to the database
+
+        boolean isProcessed = "UPI".equals(request.getPaymentMethod()) && request.getUpiId() != null;
+        String message = isProcessed ? "Payment processed for UPI ID: " + request.getUpiId() : "Payment method or UPI ID is invalid.";
+        PaymentResponse response = new PaymentResponse(isProcessed, message);
+
+        return ResponseEntity.ok(response);
+    }
+}
+
